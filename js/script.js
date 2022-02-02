@@ -43,6 +43,9 @@ var server_data = {
 var app = new Vue({
   el: '#app',
   data: {
-    col: server_data
+    col: server_data,
+    titulo: server_data.collection.title,
+    arrayData: server_data.collection.items.data,
+    arrayItems: server_data.collection.items
   }
 });
